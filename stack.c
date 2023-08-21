@@ -2,7 +2,7 @@
 #define n 5
 int a[n],top=-1,i,c;
 
-int finsert(int val)
+int firstinsert(int val)
 {
 int i;
 if(top>=n-1)
@@ -20,10 +20,10 @@ for(i=top;i>=0;i--)
 a[i]=a[i-1];
 }
 a[0]=val;
-printf("insert element is:%d",val);
+
 }
 }
-int fdelet()
+int firstdelet()
 {
 int c,i;
 c=a[0];
@@ -31,7 +31,7 @@ if(top<0)
 printf("array is empty...\n");
 else
 {
-printf("deleted element is:%d",a[0]);
+printf("element of array is:%d ",a[0]);
 for(i=0;i<top;i++)
 {
 a[i]=a[i+1];
@@ -78,9 +78,9 @@ else
 
 int main()
 {
-    finsert(20);
-    finsert(80);
-    fdelet();
+    firstinsert(20);
+    firstinsert(80);
+    firstdelet();
    
     insert(10);
     insert(20);
