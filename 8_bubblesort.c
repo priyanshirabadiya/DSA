@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-#define n 5
-int a[n],i,j,t;
+#define n 10
+int a[n],j,t,i;
 
 int bubble()
 {
@@ -20,7 +20,6 @@ int bubble()
     }
 }
 
-
 int main()
 { 
    
@@ -30,7 +29,7 @@ int main()
         printf("%d ", a[i]);
     }
    
-    bubble(t,n);
+    bubble();
 
    printf("\n bubble array:\n");
     for(i=0;i<n;i++){
